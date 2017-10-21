@@ -26,7 +26,9 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
+var bango1= 8;
 
+var bango2= 7;
 
 
 /*
@@ -43,6 +45,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
+function add(num1,num2){
+  return num1+num2;
+}
+
+var sum=add(8,7);
+
+console.log(sum);
 
 
 
@@ -60,7 +69,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
+function subtract(num1,num2){
+  return num1-num2;
+}
 
+var difference=subtract(8,7);
+
+console.log(difference)
 
 /*
  * #4
@@ -76,7 +91,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
+function multiply(num1,num2){
+  return num1*num2;
+}
 
+var product=multiply(8,7);
+
+console.log(product)
 
 /*
  * #5
@@ -92,7 +113,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
+function divide(num1,num2){
+  return num1/num2;
+}
 
+var quotient=divide(8.7);
+
+console.log(quotient)
 
 /*
  * #6
@@ -106,6 +133,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
+function checksum (x){
+  return "Mariah Carey has been married "+x+" amount of times.";
+}
+
+console.log(checksum(sum))
 
 
 /*
