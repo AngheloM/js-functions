@@ -26,9 +26,9 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-var bango1= 8;
+var bango1= 10;
 
-var bango2= 7;
+var bango2= 5;
 
 
 /*
@@ -49,7 +49,7 @@ function add(num1,num2){
   return num1+num2;
 }
 
-var sum=add(8,7);
+var sum=add(10,5);
 
 console.log(sum);
 
@@ -73,9 +73,9 @@ function subtract(num1,num2){
   return num1-num2;
 }
 
-var difference=subtract(8,7);
+var difference=subtract(10,5);
 
-console.log(difference)
+console.log(difference);
 
 /*
  * #4
@@ -95,9 +95,9 @@ function multiply(num1,num2){
   return num1*num2;
 }
 
-var product=multiply(8,7);
+var product=multiply(10,5);
 
-console.log(product)
+console.log(product);
 
 /*
  * #5
@@ -117,9 +117,9 @@ function divide(num1,num2){
   return num1/num2;
 }
 
-var quotient=divide(8.7);
+var quotient=divide(10,5);
 
-console.log(quotient)
+console.log(quotient);
 
 /*
  * #6
@@ -137,7 +137,7 @@ function checksum (x){
   return "Mariah Carey has been married "+x+" amount of times.";
 }
 
-console.log(checksum(sum))
+console.log(checksum(sum));
 
 
 /*
@@ -152,6 +152,11 @@ console.log(checksum(sum))
  * Console.log your results.
 */ 
 
+function checkdifference (x){
+  return "Last night I dreamt that I ate "+x+" Taco Bell soft tacos."
+}
+
+console.log(checkdifference(difference));
 
 
 /*
@@ -165,7 +170,11 @@ console.log(checksum(sum))
  * Console.log your result.  
 */
 
+function checkproduct (x){
+  return sum*product
+}
 
+console.log(checkproduct());
 
 /*
  * #9
@@ -177,8 +186,12 @@ console.log(checksum(sum))
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
+var bango3 = 10
+function checkquotient (x){
+  return product*quotient
+}
 
-
+console.log(checkquotient());
 
 /*
  * #10
@@ -200,8 +213,11 @@ console.log(checksum(sum))
  * Console.log your result.
 */ 
 
+function addthensubtract (num1,num2,num3){
+  return num1+num2-num3
+}
 
-
+console.log(addthensubtract(bang));
 /*
  * #11
  * Function - multiplyThenDivide
