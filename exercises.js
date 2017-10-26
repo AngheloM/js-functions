@@ -26,10 +26,10 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
+
 var bango1= 10;
 
 var bango2= 5;
-
 
 /*
  * #2
@@ -45,15 +45,14 @@ var bango2= 5;
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
+
 function add(num1,num2){
   return num1+num2;
 }
 
-var sum=add(10,5);
+var sum = add(bango1,bango2);
 
 console.log(sum);
-
-
 
 /*
  * #3
@@ -73,7 +72,7 @@ function subtract(num1,num2){
   return num1-num2;
 }
 
-var difference=subtract(10,5);
+var difference = subtract(bango1,bango2);
 
 console.log(difference);
 
@@ -95,7 +94,7 @@ function multiply(num1,num2){
   return num1*num2;
 }
 
-var product=multiply(10,5);
+var product = multiply(bango1,bango2);
 
 console.log(product);
 
@@ -117,7 +116,7 @@ function divide(num1,num2){
   return num1/num2;
 }
 
-var quotient=divide(10,5);
+var quotient = divide(bango1,bango2);
 
 console.log(quotient);
 
@@ -131,6 +130,8 @@ console.log(quotient);
  *
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
+ 
+ *Concatinating +x+
 */
 
 function checksum (x){
@@ -138,7 +139,6 @@ function checksum (x){
 }
 
 console.log(checksum(sum));
-
 
 /*
  * #7
@@ -158,7 +158,6 @@ function checkdifference (x){
 
 console.log(checkdifference(difference));
 
-
 /*
  * #8
  * Function - checkProduct
@@ -171,7 +170,7 @@ console.log(checkdifference(difference));
 */
 
 function checkproduct (x){
-  return sum*product
+  return sum*product;
 }
 
 console.log(checkproduct());
@@ -186,9 +185,10 @@ console.log(checkproduct());
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
-var bango3 = 10
+var bango3 = 10;
+
 function checkquotient (x){
-  return product*quotient
+  return product*quotient;
 }
 
 console.log(checkquotient());
@@ -213,11 +213,18 @@ console.log(checkquotient());
  * Console.log your result.
 */ 
 
+var num1 = 10;
+
+var num2 = 8;
+
+var num3 = 7;
+
 function addthensubtract (num1,num2,num3){
-  return num1+num2-num3
+  return num1+num2-num3;
 }
 
-console.log(addthensubtract(bang));
+console.log(addthensubtract(num1,num2,num3));
+
 /*
  * #11
  * Function - multiplyThenDivide
@@ -230,9 +237,15 @@ console.log(addthensubtract(bang));
  *
  * This function will multiply the first two parameters together. Then with the product of that operation, divide it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
+ *
+ * If not assigning a variable put var name;
 */ 
 
+function multiplythendivide (num1,num2,num3){
+  return num1*num2/num3
+}
 
+console.log(multiplythendivide(num1,num2,num3));
 
 /*
  * #12
@@ -246,7 +259,11 @@ console.log(addthensubtract(bang));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
+function createfullname (firstName,lastName){
+  return firstName + lastName
+}
 
+console.log(createfullname("Anghelo ", "Macha"));
 
 /*
  * #13 
@@ -262,6 +279,11 @@ console.log(addthensubtract(bang));
  * Console.log your result.
  */
 
+function eatfood (firstname,lastname, food){
+  return firstname + lastname + " likes to eat " +food;
+}
+
+console.log(eatfood("Anghelo ","Macha","sushi"));
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -287,10 +309,14 @@ console.log(addthensubtract(bang));
  * Console.log your result.
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
+ * Methods starts with a . and then put ur method name, then parentheses
 */
+
  
-
-
+function allCaps(str){
+  return str.toUpperCase();
+}
+allCaps("turn this sentence into all caps!")
 /*
  * #16
  * Function oneCap
