@@ -1,3 +1,4 @@
+
 /*
 * A function is a block of code (a series of instructions) designed to execute a certain task. Functions allow you to reuse code.
  
@@ -242,7 +243,7 @@ console.log(addthensubtract(num1,num2,num3));
 */ 
 
 function multiplythendivide (num1,num2,num3){
-  return num1*num2/num3
+  return num1*num2/num3;
 }
 
 console.log(multiplythendivide(num1,num2,num3));
@@ -260,7 +261,7 @@ console.log(multiplythendivide(num1,num2,num3));
 */
 
 function createfullname (firstName,lastName){
-  return firstName + lastName
+  return firstName + lastName;
 }
 
 console.log(createfullname("Anghelo ", "Macha"));
@@ -285,7 +286,6 @@ function eatfood (firstname,lastname, food){
 
 console.log(eatfood("Anghelo ","Macha","sushi"));
 
-
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
 *  gained figure out how to build the necessary functions. Use your google-fu to 
@@ -299,7 +299,11 @@ console.log(eatfood("Anghelo ","Macha","sushi"));
  * Console.log your result. 
 */
 
+function shoeSize(inches){
+  return inches*2.54;
+}
 
+console.log(shoeSize(12));
 
 /*
  * #15
@@ -316,7 +320,9 @@ console.log(eatfood("Anghelo ","Macha","sushi"));
 function allCaps(str){
   return str.toUpperCase();
 }
-allCaps("turn this sentence into all caps!")
+
+allCaps("turn this sentence into all caps!");
+
 /*
  * #16
  * Function oneCap
@@ -325,7 +331,11 @@ allCaps("turn this sentence into all caps!")
  * Console.log your result.
 */
 
+function capitalizeFirstLetter(string){
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
+console.log(capitalizeFirstLetter("turn this sentence into all caps!"));
 
 /*
  * #17
@@ -338,7 +348,12 @@ allCaps("turn this sentence into all caps!")
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age){
+  return Boolean(age >21);
+}
+var canDrink=verifyDrinkingAge(19);
 
+console.log(canDrink);
 
 /**
  * #18
@@ -346,8 +361,17 @@ allCaps("turn this sentence into all caps!")
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
+function throwParty(){
+  if(canDrink === true){
+    return "Cheee Hoo! We going to da party!";
+  }
+  if(canDrink === false){
+    return "Meh, see you at Starbucks.";
+  }
+}
 
-
+var canDrink=canDrink;
+console.log(throwParty());
 
 
 
